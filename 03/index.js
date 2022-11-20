@@ -1,6 +1,11 @@
-const valorDoProduto = a = 129.99;  //valor do produto
+const valorDoProduto = a = 129_99;  //valor do produto
+const meuDinheiro = 80_00; //valor que eu tenho
+const desconto = c = valorDoProduto - meuDinheiro;
 const percentualTotal = b = 100; //100% 
-const valorQueTenho = c = 80; //valor que eu tenho
-const percentual = (c * b) / a; //regra de três
 
-console.log(`É necessário um desconto de ≅ ${percentual.toFixed(0)}%.`);
+const cupom = (b * c) / a; //regra de três
+
+console.log(`É necessário um desconto de ≅ ${cupom.toFixed(2)}%.`);
+
+
+
